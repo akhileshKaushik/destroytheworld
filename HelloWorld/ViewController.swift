@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var background: UIImageView!
 
+    @IBOutlet var titleImage: UIImageView!
+    
+    @IBOutlet var welcomeBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +25,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func WelcomeBtnPressed(_ sender: AnyObject) {
+        
+        background.isHidden = false
+        
+        titleImage.isHidden = false
+        
+        welcomeBtn.isHidden = true
+    }
 }
 
